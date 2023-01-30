@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  max-width: 1440px;
+  margin: auto;
+  font-size: 18px;
+}
+
+header {
+  background-image: url(./images/bg-header-desktop.png);
+  background-size: cover;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.second-container {
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+}
+
+.start-page {
+  margin-top: -42px;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.paragraph h2 {
+  color: hsl(210, 10%, 33%);
+  font-size: 40px;
+}
+
+.paragraph p {
+  color: hsl(201, 11%, 66%);
+}
+
+.download-btn {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.btn-download-cyan {
+  color: white;
+  background-color: hsl(171, 66%, 44%);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px 35px;
+  border-radius: 30px;
+  box-shadow: 0px 3px hsla(171, 64%, 33%, 0.789);
+}
+
+.btn-download-lightblue {
+  color: white;
+  background-color: hsl(233, 100%, 69%);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px 35px;
+  border-radius: 30px;
+  box-shadow: 0px 3px hsla(233, 66%, 60%, 0.462);
+}
+
+.keep-track {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.keep-track h3 {
+  font-size: 40px;
+  color: hsl(210, 10%, 33%);
+}
+
+.keep-track p {
+  color: hsl(201, 11%, 66%);
+  line-height: 1.7;
+}
+
+.computer {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.left-section {
+  transform: translate(-10%, 0%);
+}
+
+.right-section {
+  display: flex;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.desc h4 {
+  color: hsl(210, 10%, 33%);
+  font-size: 24px;
+}
+
+.desc p {
+  color: hsl(201, 11%, 66%);
+  max-width: 410px;
+}
+
+.clipboard {
+  margin-top: 150px;
+}
+
+.clipboard h3 {
+  color: hsl(210, 10%, 33%);
+  font-size: 30px;
+}
+
+.clipboard p {
+  color: hsl(201, 11%, 66%);
+  margin-top: 20px;
+}
+
+.devices-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 1100px;
+}
+
+.workflows {
+  text-align: center;
+  margin-top: 100px;
+  line-height: 2.2;
+}
+
+.workflows h3 {
+  font-size: 30px;
+  color: hsl(210, 10%, 33%);
+}
+
+.workflows p {
+  font-size: 16px;
+  color: hsl(201, 11%, 66%);
+}
+
+.workflows .container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 80px;
+}
+
+.workflow {
+  width: 430px;
+}
+
+.workflow h5 {
+  color: hsl(210, 10%, 33%);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.workflow p {
+  margin-top: 15px;
+  width: 350px;
+}
+
+.logos-works {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+
+.install-desc {
+  margin-top: 150px;
+}
+
+.install-desc h3 {
+  font-size: 30px;
+  color: hsl(210, 10%, 33%);
+}
+
+.install-desc p {
+  line-height: 1.7;
+}
+
+.install-desc .download-btn {
+  margin-top: 50px;
+}
+
+footer {
+  background-color: #f5f6f8;
+  margin-top: 150px;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo-footer img {
+  width: 50px;
+  margin-right: 150px;
+}
+
+.menu-footer {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  gap: 40px;
+}
+
+.descs-footer {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.descs-footer a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+
+.social-medias {
+  display: flex;
+  gap: 30px;
+}
