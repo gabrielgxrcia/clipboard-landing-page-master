@@ -8,7 +8,6 @@
 
 body {
   font-family: 'Bai Jamjuree', sans-serif;
-  max-width: 1440px;
   margin: auto;
   font-size: 18px;
 }
@@ -18,11 +17,12 @@ header {
   background-size: cover;
   text-align: center;
   padding: 90px 0;
+  display: flex;
+  justify-content: center;
 }
 
-.container {
-  max-width: 80%;
-  margin: auto;
+main {
+  padding: 0 8px;
 }
 
 .second-container {
@@ -95,23 +95,36 @@ header {
 
 .computer {
   display: flex;
-  gap: 30px;
-  margin-top: 50px;
+  gap: 60px;
+  margin-top: 80px;
+  flex-wrap: wrap;
 }
 
 .left-section {
-  transform: translate(-10%, 0%);
+  max-width: 700px;
+}
+
+.left-section img {
+  width: 100%;
+  transform: translateX(-10%);
 }
 
 .right-section {
   display: flex;
 }
 
+.desc-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .desc {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 50px;
 }
 
 .desc h4 {
@@ -126,6 +139,10 @@ header {
 
 .clipboard {
   margin-top: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
 }
 
 .clipboard h3 {
@@ -142,8 +159,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  width: 1100px;
+  max-width: 700px;
+}
+
+.devices-img img {
+  width: 100%;
 }
 
 .workflows {
@@ -167,10 +187,11 @@ header {
   justify-content: center;
   gap: 15px;
   margin-top: 80px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .workflow {
-  width: 430px;
 }
 
 .workflow h5 {
@@ -190,6 +211,7 @@ header {
   display: flex;
   justify-content: space-around;
   margin-top: 150px;
+  flex-wrap: wrap;
 }
 
 .install-desc {
@@ -218,6 +240,7 @@ footer .container {
   display: flex;
   align-items: center;
   padding: 30px;
+  flex-wrap: wrap;
 }
 
 .logo-footer img {
@@ -229,7 +252,7 @@ footer .container {
   display: flex;
   flex: 1;
   text-decoration: none;
-  gap: 40px;
+  gap: 0px;
 }
 
 .descs-footer {
@@ -247,6 +270,27 @@ footer .container {
 .social-medias {
   display: flex;
   gap: 30px;
+}
+
+@media (max-width: 1200px) {
+  .computer {
+    justify-content: center;
+  }
+
+  .left-section img {
+    transform: translateX(0);
+  }
+
+  .desc {
+    text-align: center;
+  }
+}
+
+@media (max-width: 980px) {
+  .logos-works {
+    gap: 50px;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -301,26 +345,16 @@ footer .container {
     width: 350px;
   }
 
-  .left-section img {
-    width: 330px;
-    margin-left: 50px;
+  .left-section {
+    width: 700px;
+  }
+
+  .left-section {
   }
 
   .right-section {
     display: flex;
     text-align: center;
-  }
-
-  .clipboard {
-    display: flex;
-    flex-direction: column;
-    margin-left: 8px;
-    width: 350px;
-  }
-
-  .clipboard img {
-    width: 33%;
-    margin-right: 750px;
   }
 
   .workflows h3 {
@@ -333,16 +367,9 @@ footer .container {
     line-height: 1.3;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-
   .logos-works {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
+    width: 300px;
+    margin: 100px auto;
   }
 
   .install-desc .paragraph h3 {
